@@ -19,7 +19,7 @@
   <!-- Twitter4j configuration (replace these values with your own—I'm done with Shitter -->    
   <env-variables>
     <env-var name="TWITTER4J_DEBUG" value="true" />
-    <env-var name="TWITTER4J_OAUTH_CONSUMER_KEY" value="QU4YR3CNdQsEqIep1v2jBUabE" />
+    <env-var name="TWITTER4J_OAUTH_CONSUMER_KEY" value="QU4YR3CNdQsEqIep1v2******" />
     <env-var name="TWITTER4J_OAUTH_CONSUMER_SECRET" value="WBE907HNeXZAEwKWkxNRlf8CfXa84GOUMbyScqo9lPunPx9sdh" />
     <env-var name="TWITTER4J_OAUTH_ACCESS_TOKEN" value="MY_ACCESS_TOKEN" />
     <env-var name="TWITTER4J_OAUTH_ACCESS_TOKEN_SECRET" value="MY_TOKEN_SECRET" />
