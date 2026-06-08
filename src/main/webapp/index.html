@@ -1,48 +1,27 @@
-<!DOCTYPE html 
-     PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" data-theme="light">
 <head>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-  <title>TwitterSpammer</title>
-<style>
-h1.intro 
-   {
-   color: blue;
-   }
-input.long 
-   {
-   width: 300px;
-   }
-input.longest 
-   {
-   width: 600px;
-   }
-
-</style>
+  <title>Welcome to Xeme</title>
+   <!-- Pico.css --> 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2.1.1/css/pico.min.css" />
 </head>
 
 <body>
-  <h1 class="intro">Twitter Spammer</h1>
-  <p>Welcome to Twitter Spammer. Here we will set some options for spamming.</p>
-  <h2>Input form</h2>  
-  <form method="get" action="TwitterSpammerServlet">
-    <fieldset>
-      <legend>Twitter OAuth parameters</legend>
-          OAuth ConsumerKey: <input type="text" name="OAuthConsumerKey" class="long"/><br /><br />
-          OAuth ConsumerSecret: <input type="text" name="OAuthConsumerSecret" class="longest"/><br /><br />
-          OAuth AccessToken: <input type="text" name="OAuthAccessToken" class="longest"/><br /><br />
-          OAuth AccessTokenSecret: <input type="text" name="OAuthAccessTokenSecret" class="longest" /><br /><br />
-     </fieldset>
-     <br /><br />
-     <fieldset>
-      <legend>Spamming options</legend>
-         Twitter host with lots of followers: @<input type="text" name="host" value="barackobama" class="long" /><br /><br />
-         Spamming message: <input type="text" name="message" value="Hello from TwitterSpammer!" class="longest"  /><br /><br />
-         Number of messages at a time (1-6): <input type="range" name="frequency" min="1" max="6"><br /><br />
-     </fieldset>
-  <input type="submit" value="Submit">
-  </form>  
- 
+  <main class="container" style="max-width: 800px;">
+    <h1>Welcome To Xeme</h1>
+    <p>Set or change Xeme configuration with the form.</p>  
+    <form method="get" action="XemeServlet">
+       <fieldset>
+        <legend>Configure Xeme</legend>
+           Twitter host with lots of followers: @<input type="text" name="host" value="barackobama" style="width: 300px;" /><br />
+           Message: <input type="text" name="message" value="Hello from Xeme!" style="width: 600px;"  /><br />
+           Number of messages to send at a time: <input type="range" name="frequency" min="1" max="6" />
+       </fieldset>
+    <input type="submit" value="Submit" />
+    </form>  
+   <h2>Go To Xeme Servlet</h2>  
+    <p><a href="XemeServlet">check if values are set</a></p>
+  </main>
 </body>
 </html>
